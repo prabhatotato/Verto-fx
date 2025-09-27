@@ -1,6 +1,6 @@
 # Employee Hub
 
-A full-stack employee management system built with **React (frontend)**, **Express.js (backend)**, and **SQLite (database)**.  
+A full-stack employee management system built with **React (frontend)**, **Express.js (backend)**, and **PostgreSQL (database)**.  
 The app allows you to **add, edit, search, and delete employees** in a clean and simple UI.
 
 ---
@@ -26,13 +26,13 @@ The app allows you to **add, edit, search, and delete employees** in a clean and
      │ │ Business Logic │ │
      │ └───────────────┘ │
      └─────────┬─────────┘
-               │ SQLite queries
+               │ PostgreSQL queries
                ▼
-     ┌───────────────────┐
-     │   SQLite Database │
-     │  employee table   │
+     ┌───────────────────────┐
+     │   PostgreSQL Database │
+     │  employee table       │
      │  (id, name, email, position) │
-     └───────────────────┘
+     └───────────────────────┘
 
 
 ---
