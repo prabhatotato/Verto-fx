@@ -1,5 +1,4 @@
 require('dotenv').config();
-const cors = require('cors'); 
 const express = require('express');
 const employeeRouter = require('./routes/employees');
 
@@ -9,9 +8,8 @@ console.log(`Starting server on port ${PORT}`);
 
 
 // Middleware
-app.use(express.json());
-app.use(cors({ origin: 'http://localhost:8080' }));
 app.use('/api/employees', employeeRouter);
+app.use(express.json());
 
 app.get('/', (req, res) => {
     // A simple, clear message for the API entry point
